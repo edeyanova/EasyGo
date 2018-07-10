@@ -1,0 +1,141 @@
+body {
+    background-color: lightblue;
+    background-image: url(../images/Switzerland.jpg);
+    background-size: 100% 100%;
+}
+
+html {
+    height: 100%
+}
+
+#submit {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #0ca3d2;
+    border: none;
+    border-radius: 15px;
+}
+
+p{
+    font-size: 140%;
+}
+
+textarea {
+    width: 30%;
+    height: 200px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+input[type=text] {
+    width: 40%;
+    padding: 6px 50px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+#data {
+    width: 40%;
+    padding: 6px 50px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+#crawler_output {
+    width: 40%;
+    padding: 6px 50px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+#crawler{
+    right: 300px;
+}
+
+a.logout {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #0ca3d2;
+    border: none;
+    border-radius: 15px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #0ca3d2;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: white;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navigation ul li {
+    float: left;
+}
+
+.navigation ul li a {
+    display: block;
+    color: #0ca3d2;
+    text-align: center;
+    padding: 17px;
+    text-decoration: none;
+    background-color: rgba(255,255,255,0.7);
+    margin: 0 auto 3px 5px;
+    -moz-border-radius: 9px 9px 9px 9px;
+    -webkit-border-radius: 9px 9px 9px 9px;
+    border-radius: 9px 9px 9px 9px;
+}
+
+.navigation ul li a:hover {
+    background-color: white;
+}

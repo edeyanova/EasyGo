@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112810080-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-112810080-1');
+        </script>
+        <link rel="stylesheet" href="../public/stylesheets/indexStyle.css">
+		<link rel="stylesheet" href="/public/stylesheets/bg_animation.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+    <body class="bgInitial">
+        <nav class="navigation">
+            <ul>
+            <li><a href="/" class="home"><b>Home</b></a><br></li>
+            <% if (!info) { %>
+                <li><a href="/users" class="register"><b>Register</b></a><br></li>
+            <% } %>  
+            <% if (!info) { %>
+                <li><a href="/logins" class="logins"><b>Login</b></a><br></li>
+            <% } %>  
+            <% if (info) { %>
+            <li><a href="/feedback" class="feedback"><b>Feedback</b></a><br></li
+            <% } %>
+            </ul>
+            <% if (info) { %>
+                <a href="/logout" class="logout">Logout</a><br>
+            <% } %>            
+        </nav>
+        <br>
+        <div class="infoLogged">
+        <% if (info) { %>
+      
+        <% } %>
+        </div>
+       
+		<script>
+			var i = 0;
+			setInterval(function() {
+			  i++;
+			  i = i%9;
+			  document.body.className = "bg" + (i + 1);
+			}, 20000);
+		</script>
+
+        <br>
+
+        <script>
+                jQuery(document).ready(function() {
+                    jQuery('.tabs .tab-links a').on('click', function(e)  {
+                        var currentAttrValue = jQuery(this).attr('href');
+                 
+                        // Show/Hide Tabs
+                        jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+                 
+                        // Change/remove current tab to active
+                        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+                 
+                        e.preventDefault();
+                    });
+                   
+                     
+                    jQuery('.nextButton').on('click', function() {
+                        
+                   var $activeTab = $('.tab-links li.active');
+                     
+                     var $wrapper = jQuery(this).closest('.tabs');
+                   var indexActive = $wrapper.find('li.active').index();
+                   $wrapper.find('li').eq(indexActive + 1).find('a').click();
+                });
+                    
+                     jQuery('.prevButton').on('click', function() {
+                        
+                   var $activeTab = $('.tab-links li.active');
+                     
+                     var $wrapper = jQuery(this).closest('.tabs');
+                   var indexActive = $wrapper.find('li.active').index();
+                   $wrapper.find('li').eq(indexActive - 1).find('a').click();
+                });
+                    
+                });
+                </script>
+        <form id = "intro">
+                <p><i><b>Welcome to EasyGo!</b>Our goal is to choose the best destination for you available at us! To make sure you get the most and the best, please answer the few questions below. We need to know what you like so that we make your journey remarkable!</i></p>
+        </form>
+
+        <form id = "questions">
+            <div class="tabs">
+                    <ul class="tab-links">
+                        <li class="active"><a href="#tab1">Question 1</a></li>
+                        <li><a href="#tab2">Question 2</a></li>
+                        <li><a href="#tab3">Question 3</a></li>
+                        <li><a href="#tab4">Question 4</a></li>
+                        <li><a href="#tab5">Question 5</a></li>
+                        <li><a href="#tab6">Question 6</a></li>
+                        <li><a href="#tab7">Question 7</a></li>
+                        <li><a href="#tab8">Question 8</a></li>
+                    </ul>
+                 
+                    <div class="tab-content">
+                        <div id="tab1" class="tab active">
+                           <p><i><b>You would rather go to mountain than see?</b></i></p>
+                            <input type="radio" name="q1" value="Yes">Yes<br>
+                            <input type="radio" name="q1" value="No">No<br>
+                            <input type="radio" name="q1" value="Not_sure">Not sure<br>
+                          <ul class="tab-links">
+                         <li>
+                          <a href="#next_tab2" class="nextButton">Next</a>
+                        </li>
+                    </ul>
+                        </div>
+                 
+                        <div id="tab2" class="tab">
+                        <p><i><b>Water and beach is better than mountain?</b></i></p>
+                            <input type="radio" name="q2" value="Yes">Yes<br>
+                            <input type="radio" name="q2" value="No">No<br>
+                            <input type="radio" name="q2" value="Not_sure">Not sure<br>
+                        <ul class="tab-links">
+                        <li>
+                          <a href="#back_tab1" class="prevButton">Prev</a>
+                          <a href="#next_tab2" class="nextButton">Next</a>
+                        </li>
+                    </ul>
+                        </div>
+                 
+                        <div id="tab3" class="tab">
+                        <p><i><b>You enjoy visiting museums?</b></i></p>
+                            <input type="radio" name="q3" value="Yes">Yes<br>
+                            <input type="radio" name="q3" value="No">No<br>
+                            <input type="radio" name="q3" value="Not_sure">Not sure<br>
+                        <ul class="tab-links">
+                            <li>
+                          <a href="#back_tab1" class="prevButton">Prev</a>
+                          <a href="#next_tab2" class="nextButton">Next</a>
+                        </li>
+                    </ul>
+                        </div>
+                 
+                        <div id="tab4" class="tab">
+                            <p><i><b>Do you prefer a landscape view?</b></i></p>
+                            <input type="radio" name="q4" value="Yes">Yes<br>
+                            <input type="radio" name="q4" value="No">No<br>
+                            <input type="radio" name="q4" value="Not_sure">Not sure<br>
+                            <ul class="tab-links">
+                            <li>
+                          <a href="#back_tab1" class="prevButton">Prev</a>
+                          <a href="#next_tab2" class="nextButton">Next</a>
+                      </li>
+                  </ul>
+                        </div>
+                        
+                        <div id="tab5" class="tab">
+                            <p><i><b>You find adventurous places attractive?</b></i></p>
+                            <input type="radio" name="q5" value="Yes">Yes<br>
+                            <input type="radio" name="q5" value="No">No<br>
+                            <input type="radio" name="q5" value="Not_sure">Not sure<br>
+                            <ul class="tab-links">
+                            <li>
+                          <a href="#back_tab1" class="prevButton">Prev</a>
+                          <a href="#next_tab2" class="nextButton">Next</a>
+                      </li>
+                  </ul>
+                        </div>
+                        
+                        <div id="tab6" class="tab">
+                            <p><i><b>Would you like Waterfalls?</b></i></p>
+                            <input type="radio" name="q6" value="Yes">Yes<br>
+                            <input type="radio" name="q6" value="No">No<br>
+                            <input type="radio" name="q6" value="Not_sure">Not sure<br>
+                            <ul class="tab-links">
+                            <li>
+                          <a href="#back_tab1" class="prevButton">Prev</a>
+                          <a href="#next_tab2" class="nextButton">Next</a>
+                      </li>
+                  </ul>
+                        </div>
+                        
+                        <div id="tab7" class="tab">
+                            <p><i><b>Do you like water sports?</b></i></p>
+                            <input type="radio" name="q7" value="Yes">Yes<br>
+                            <input type="radio" name="q7" value="No">No<br>
+                            <input type="radio" name="q7" value="Not_sure">Not sure<br>
+                            <ul class="tab-links">
+                            <li>
+                          <a href="#back_tab1" class="prevButton">Prev</a>
+                          <a href="#next_tab2" class="nextButton">Next</a>
+                      </li>
+                  </ul>
+                        </div>
+                        
+                        <div id="tab8" class="tab">
+                            <p><i><b>Would you like to visit a temple?</b></i></p>
+                            <input type="radio" name="q8" value="Yes">Yes<br>
+                            <input type="radio" name="q8" value="No">No<br>
+                            <input type="radio" name="q8" value="Not_sure">Not sure<br>
+                            <ul class="tab-links">
+                            <li>
+                          <a href="#back_tab1" class="prevButton">Prev</a>
+                      </li>
+                  </ul>
+                        </div>
+                    </div>
+                </div>
+
+            <br>
+            <input type="button" id="submit" value="Submit" onclick="getFormData()" />
+        </form>
+
+        <div class="bg1"></div>
+        <div class="bg2"></div>
+        <div class="bg3"></div>
+
+        <div class="bg4"></div>
+        <div class="bg5"></div>
+        <div class="bg6"></div>
+
+        <div class="bg7"></div>
+        <div class="bg8"></div>
+        <div class="bg9"></div>
+
+        <script>
+            function getFormData(){
+		if ($("input:checked").length === 0) {
+		  alert("Please answer at least one question!");
+                  return;
+                }
+                var $form = $("#questions");
+                var unindexed_array = $form.serializeArray();
+                var indexed_array = {};
+
+                $.map(unindexed_array, function(n, i){
+                    indexed_array[n['name']] = n['value'];
+                });
+                var res = $.param(indexed_array);
+                res = '/trips?' + res;
+                location.href = res;
+            }
+            function getFormDataTags(){
+                var $form = $("#tags");
+                var unindexed_array = $form.serializeArray();
+                for (var i = 0; i < unindexed_array.length; i++) {
+                    console.log('/users/tags/' + unindexed_array[i].name);
+                    $.ajax({
+                        url: '/users/tags/' + unindexed_array[i].name,
+                        method: 'post',
+                        success: function(data) {
+                            console.log(data);
+                        }
+                    });
+                }
+                console.log(unindexed_array);
+            }
+        </script>
+
+        <script>
+          var manuallyUpdateTripsPanel;
+        </script>
+        <div id="app"></div>
+        <div id="myTripsPanel"></div>
+        <script src="/public/react/tripComponent.js"></script>
+        <script src="/public/react/myTrips.js"></script>
+    </body>
+</html>

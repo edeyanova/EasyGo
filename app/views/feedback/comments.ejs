@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="../public/stylesheets/comments.css">
+        <link rel="stylesheet" href="/public/stylesheets/bg_animation.css">                
+    </head>
+    <body class="bgInitial">
+        <nav>
+                    <ul>
+                        <li><a href="/" class="home"><b>Home</b></a><br></li>
+                    </ul>
+                    <a href="/logout" class="logout">Logout</a><br>
+            </nav>
+            <div id="comment">
+                <p><b><i>Give your comment about the system, please!</i></b></p>
+            </div>
+            <textarea name="comment" form="comments" rows="20" cols="50">
+            </textarea>
+            <form id="comments" action="/feedback" method="post">
+                <input type="submit" id="submit" value="Submit" />
+            </form>
+            <script>
+                var i = 0;
+                setInterval(function() {
+                i++;
+                i = i%9;
+                document.body.className = "bg" + (i + 1);
+                }, 20000);
+            </script>
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bg3"></div>
+
+    <div class="bg4"></div>
+    <div class="bg5"></div>
+    <div class="bg6"></div>
+
+    <div class="bg7"></div>
+    <div class="bg8"></div>
+    <div class="bg9"></div>
+    </body>
+</html>

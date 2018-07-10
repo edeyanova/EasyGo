@@ -1,0 +1,176 @@
+body {
+    background-color: lightblue;
+    background-image: url(../images/Switzerland.jpg);
+    background-size: 100% 100%;
+}
+
+html {
+    height: 100%
+}
+
+a.logout {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #0ca3d2;
+    border: none;
+    border-radius: 15px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #0ca3d2;
+    text-align: center;
+    padding: 17px;
+    text-decoration: none;
+    background-color: rgba(255,255,255,0.7);
+    margin: 0 auto 3px 5px;
+    -moz-border-radius: 9px 9px 9px 9px;
+    -webkit-border-radius: 9px 9px 9px 9px;
+    border-radius: 9px 9px 9px 9px;
+}
+
+li a:hover {
+    background-color: white;
+}
+
+textarea {
+    left: 30%;
+    top: 30%;
+    margin-left: 60%;
+    position: absolute;
+    margin-top: 25%;
+    margin: 80px auto;
+    line-height: 40px;
+    position:fixed;
+    float:left;
+    width:550px;
+    overflow-y: auto;
+    height: 200px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.822);
+}
+
+#comment {
+    left: 30%;
+    top: 16%;
+    margin-left: 60%;
+    position: absolute;
+    margin-top: 0%;
+    margin: 80px auto;
+    line-height: 40px;
+    position:fixed;
+    float:left;
+    width:500px;
+    overflow-y: auto;
+    height: 80px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.822);
+}
+
+#comments #submit{
+    left: 30%;
+    top: 64%;
+    margin-left: 60%;
+    position: absolute;
+    margin-top: 0%;
+    margin: 80px auto;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #0ca3d2;
+    border: none;
+    border-radius: 15px;
+    position: absolute;
+    height: 40px;
+    bottom: 10px;
+    right: 20px;
+}
+
+input[type=text] {
+    width: 40%;
+    padding: 6px 50px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.panel {
+    position: fixed;
+    bottom: 3%;
+    right: 0.5%;
+    width: 270px;
+  }
+  
+  .panel-aux {
+    background-color: rgba(255,255,255,0.7);
+    height: 300px;
+    overflow-x: auto;
+    overflow-y: auto;
+    -moz-border-radius: 9px 9px 9px 9px;
+    -webkit-border-radius: 9px 9px 9px 9px;
+    border-radius: 9px 9px 9px 9px;
+    box-shadow: 1px 1px 11px #330033;
+  }
+
+#data {
+    width: 40%;
+    padding: 6px 50px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+#submit {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #0ca3d2;
+    border: none;
+    border-radius: 15px;
+    bottom: 10px;
+    bottom: 10px;
+    right: 20px;
+}
+
+#xecurrencywidget {
+    position: fixed;
+    bottom: 5%;
+    right: 47%;
+    width: 300px;
+  }

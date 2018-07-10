@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="../public/stylesheets/statistics.css">
+        <link rel="stylesheet" href="/public/stylesheets/bg_animation.css">                
+    </head>
+    <body class="bgInitial">
+        <nav class="navigation">
+                    <ul>
+                    <li><a href="/crawlers" class="crawlers"><b>Crawlers</b></a><br></li>
+                    <li><a href="/feedback" class="feedback"><b>Feedback</b></a><br></li>
+                    </ul>
+                    <a href="/logout" class="logout">Logout</a><br>
+            </nav>
+        <table style="table-layout:fixed; width:100%;">
+                <tr>
+                  <th>Site</th>
+                  <th>Visited</th> 
+                </tr>
+                <% for (var i = 0; i < domains.length; i++) { %>
+                    <tr>
+                      <td><b> <%= domains[i].domain %> </b></td>
+                      <td><b> <%= domains[i].picked %> </b></td>
+                    </tr>
+                <% } %>    
+                <br>
+                <% for (var i = 0; i < trips.length; i++) { %>
+                    <tr>
+                      <td><%= trips[i].url %></td>
+                      <td><%= trips[i].picked %></td>
+                    </tr>
+                <% } %> 
+        </table>
+        <script>
+			var i = 0;
+			setInterval(function() {
+			  i++;
+			  i = i%9;
+			  document.body.className = "bg" + (i + 1);
+			}, 20000);
+        </script>
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bg3"></div>
+
+    <div class="bg4"></div>
+    <div class="bg5"></div>
+    <div class="bg6"></div>
+
+    <div class="bg7"></div>
+    <div class="bg8"></div>
+    <div class="bg9"></div>
+    </body>
+</html>

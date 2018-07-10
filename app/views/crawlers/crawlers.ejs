@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="../public/stylesheets/crawlers.css">
+        <link rel="stylesheet" href="/public/stylesheets/bg_animation.css">                
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body class="bgInitial">
+        <nav class="navigation">
+                    <ul>
+                    <li><a href="/statistics" class="statistics"><b>Statistics</b></a><br></li>
+                    <li><a href="/feedback" class="feedback"><b>Feedback</b></a><br></li>                    
+                    </ul>
+                    <a href="/logout" class="logout">Logout</a><br>
+            </nav>
+
+        <br>
+        
+        <div id="app"></div>
+
+        <br/>
+        <textarea name="urls" form="crawler_reg" rows="20" cols="50"></textarea>
+        <textarea name="code" form="crawler_reg" rows="20" cols="50"></textarea>
+
+        <form id="crawler_reg" action="/crawlers/reg" method="post">
+            <input type="submit" id="submit" value="Submit" />
+        </form>
+
+        <script src="/public/react/testCode.js"></script>
+        <script>
+			var i = 0;
+			setInterval(function() {
+			  i++;
+			  i = i%9;
+			  document.body.className = "bg" + (i + 1);
+			}, 20000);
+        </script>
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bg3"></div>
+
+    <div class="bg4"></div>
+    <div class="bg5"></div>
+    <div class="bg6"></div>
+
+    <div class="bg7"></div>
+    <div class="bg8"></div>
+    <div class="bg9"></div>
+    </body>
+</html>

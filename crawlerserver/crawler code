@@ -1,0 +1,52 @@
+
+
+["http://www.tours4fun.com/death-valley-tour.html","http://www.tours4fun.com/hollywood-freedom-tour.html","http://www.tours4fun.com/franz-josef-glacier-heli-hike.html","http://www.tours4fun.com/skip-the-line-best-of-barcelona-tour-including-sagrada-familia.html","http://www.tours4fun.com/death-valley-day-tour-from-las-vegas.html","http://www.tours4fun.com/hobbiton-day-tour.html","http://www.tours4fun.com/blue-mountains-featherdale-wildlife-park-sightseeing-tour.html","http://www.tours4fun.com/kangaroo-island-and-great-ocean-road-tour-4-day.html","http://www.tours4fun.com/phillip-island-penguin-parade-wildlife-adventure-tour.html","http://www.tours4fun.com/muir-woods-and-sausalito-tour-half-day.html","http://www.tours4fun.com/cu-chi-tunnels-mekong-delta-tour-vip.html","http://www.tours4fun.com/vip-zion-tour-from-las-vegas.html","http://www.tours4fun.com/niagara-falls-in-depth-tour-from-toronto.html","http://www.tours4fun.com/blue-mountains-day-trip-from-sydney-small-group.html","http://www.tours4fun.com/australia-tour-14-day.html"]
+
+function f(body) {
+    const $ = cheerio.load(body);
+
+    var $items = $('.bt_overview_left');
+    $items = [$items[0]];
+
+    $items = utils.children($items);
+    $items = utils.filter($items, function(elem) {
+        return elem.type === 'tag' && elem.attribs.class === 'js-show-more-desc';
+    });
+
+    $items = utils.children($items);
+    $items = utils.filter($items, function(elem) {
+        return elem.type === 'tag' && elem.attribs.class === 'bt_hightlights';
+    });
+
+    $items = utils.children($items);
+    $items = utils.filter($items, function(elem) {
+        return elem.type === 'tag' && elem.name === 'ul';
+    });
+
+    $items = utils.children($items);
+    $items = utils.filter($items, function(elem) {
+        return elem.type === 'tag' && elem.name === 'li';
+    });
+
+    $items = utils.children($items);
+    $items = utils.map($items, function(elem) {
+        return elem.data;
+    });
+    return $items;
+}
+
+
+["http://www.haystravel.co.uk/public/offerdetail.pl?id=254321&zoneid=3472","http://www.haystravel.co.uk/public/offerdetail.pl?id=270657&zoneid=3472","http://www.haystravel.co.uk/public/offerdetail.pl?id=250917&zoneid=3472","http://www.haystravel.co.uk/public/offerdetail.pl?id=236349&zoneid=3472","http://www.haystravel.co.uk/public/offerdetail.pl?id=259223&zoneid=3472","http://www.haystravel.co.uk/public/offerdetail.pl?id=256593&zoneid=3472","http://www.haystravel.co.uk/public/offerdetail.pl?id=252263&zoneid=3472","http://www.haystravel.co.uk/public/offerdetail.pl?id=259888&zoneid=3472","http://www.haystravel.co.uk/public/offerdetail.pl?id=260100&zoneid=3472","http://www.haystravel.co.uk/public/offerdetail.pl?id=242008&zoneid=3472","http://www.haystravel.co.uk/public/offerdetail.pl?id=260099&zoneid=3472","http://www.haystravel.co.uk/public/offerdetail.pl?id=265624&zoneid=3472"]
+
+function f(body) {
+const $ = cheerio.load(body);
+var $items = $('#overviewTab_content');
+$items = utils.children($items);
+$items = utils.filter($items, function(elem) {
+return elem.type === 'text';
+});
+$items = utils.map($items, function(elem) {
+return elem.data;
+});
+return $items;
+}

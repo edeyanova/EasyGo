@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="../public/stylesheets/feedback.css">
+        <link rel="stylesheet" href="/public/stylesheets/bg_animation.css">        
+    </head>
+    <body class="bgInitial">
+        <nav class="navigation">
+                    <ul>
+                    <li><a href="/crawlers" class="crawlers"><b>Crawlers</b></a><br></li>
+                    <li><a href="/statistics" class="statistics"><b>Statistics</b></a><br></li>
+                    </ul>
+                    <a href="/logout" class="logout">Logout</a><br>
+            </nav>
+        <table style="width:100%">
+                <tr>
+                  <th>User</th>
+                  <th>Comments</th> 
+                </tr>
+                <% for (var i = 0; i < users.length; i++) { %>
+                    <tr>
+                      <td><b> <%= users[i].username %> </b></td>
+                      <td><b> <%= users[i].comment %> </b></td>
+                    </tr>
+                <% } %>      
+        </table>
+        <script>
+			var i = 0;
+			setInterval(function() {
+			  i++;
+			  i = i%9;
+			  document.body.className = "bg" + (i + 1);
+			}, 20000);
+        </script>
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bg3"></div>
+
+    <div class="bg4"></div>
+    <div class="bg5"></div>
+    <div class="bg6"></div>
+
+    <div class="bg7"></div>
+    <div class="bg8"></div>
+    <div class="bg9"></div>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="../public/stylesheets/converter.css">
+        <link rel="stylesheet" href="/public/stylesheets/bg_animation.css">
+        <script src="/public/js/jquery.js"></script>                
+    </head>
+    <body class="bgInitial">
+        <nav class="navigation">
+            <ul>
+                <li><a href="/" class="home"><b>Home</b></a><br></li>
+                <% if (info) { %>
+                    <li><a href="/feedback" class="feedback"><b>Feedback</b></a><br></li
+                    <% } %>
+              </ul>
+              <% if (info) { %>
+                    <a href="/logout" class="logout">Logout</a><br>
+                    <% } %>
+
+            </nav>
+            <div class="infoLogged">
+                <% if (info) { %>
+              
+                <% } %>
+                </div>
+            <br>
+            <div id="comment">
+                <p><b><i>Use the currency converter for easier calculations of the prices!</i></b></p>
+            </div>
+            <div id="xecurrencywidget"></div>
+            <script>var xeCurrencyWidget = {"domain":"fierce-sierra-32935.herokuapp.com","language":"en","size":"compact"};</script>
+            <script src="https://www.xe.com/syndication/currencyconverterwidget.js"></script>
+            
+            <script>
+                var i = 0;
+                setInterval(function() {
+                i++;
+                i = i%9;
+                document.body.className = "bg" + (i + 1);
+                }, 20000);
+            </script>
+            <script>
+                var manuallyUpdateTripsPanel;
+              </script>
+              <div id="app"></div>
+              <div id="myTripsPanel"></div>
+              <script src="/public/react/tripComponent.js"></script>
+              <script src="/public/react/myTrips.js"></script>
+    </body>
+</html>

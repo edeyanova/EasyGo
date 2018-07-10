@@ -1,0 +1,300 @@
+diff --git a/public/stylesheets/comments.css b/public/stylesheets/comments.css
+index 2bffa18..f202edc 100644
+--- a/public/stylesheets/comments.css
++++ b/public/stylesheets/comments.css
+@@ -25,17 +25,6 @@ a.logout {
+     right: 20px;
+ }
+ 
+-#b1 { background: url(../images/NewYork.jpg); background-size: 100% 100%;}
+-#b2 { background: url(../images/Dubai.jpg); background-size: 100% 100%;}
+-#b3 { background: url(../images/Miami.jpg); background-size: 100% 100%;}
+-#b4 { background: url(../images/Alaska.jpg); background-size: 100% 100%;}
+-#b5 { background: url(../images/Switzerland.jpg); background-size: 100% 100%;}
+-#b6 { background: url(../images/England.jpg); background-size: 100% 100%; }
+-#b7 { background: url(../images/London.jpg); background-size: 100% 100%; }
+-#b8 { background: url(../images/Dublin.jpg); background-size: 100% 100%; }
+-#b9 { background: url(../images/Norway.jpg); background-size: 100% 100%; }
+-#b10 { background: url(../images/Istanbul.jpg); background-size: 100% 100%; }
+-
+ ul {
+     list-style-type: none;
+     margin: 0;
+diff --git a/public/stylesheets/crawlers.css b/public/stylesheets/crawlers.css
+index 564d9bf..9b1766a 100644
+--- a/public/stylesheets/crawlers.css
++++ b/public/stylesheets/crawlers.css
+@@ -8,17 +8,6 @@ html {
+     height: 100%
+ }
+ 
+-#b1 { background: url(../images/Switzerland.jpg); background-size: 100% 100%;}
+-#b2 { background: url(../images/California.jpg); background-size: 100% 100%;}
+-#b3 { background: url(../images/NewYork.jpg); background-size: 100% 100%;}
+-#b4 { background: url(../images/England.jpg); background-size: 100% 100%; }
+-#b5 { background: url(../images/Dublin.jpg); background-size: 100% 100%; }
+-#b6 { background: url(../images/Niagara.jpg); background-size: 100% 100%; }
+-#b7 { background: url(../images/Snow.jpg); background-size: 100% 100%; }
+-#b8 { background: url(../images/Rome.jpg); background-size: 100% 100%; }
+-#b9 { background: url(../images/Paris.jpg); background-size: 100% 100%; }
+-#b10 { background: url(../images/China.jpg); background-size: 100% 100%; }
+-
+ #submit {
+     display: inline-block;
+     padding: 15px 25px;
+diff --git a/public/stylesheets/feedback.css b/public/stylesheets/feedback.css
+index 172aa1f..8520a0d 100644
+--- a/public/stylesheets/feedback.css
++++ b/public/stylesheets/feedback.css
+@@ -8,17 +8,6 @@ html {
+     height: 100%
+ }
+ 
+-#b1 { background: url(../images/Switzerland.jpg); background-size: 100% 100%;}
+-#b2 { background: url(../images/California.jpg); background-size: 100% 100%;}
+-#b3 { background: url(../images/NewYork.jpg); background-size: 100% 100%;}
+-#b4 { background: url(../images/England.jpg); background-size: 100% 100%; }
+-#b5 { background: url(../images/Dublin.jpg); background-size: 100% 100%; }
+-#b6 { background: url(../images/Niagara.jpg); background-size: 100% 100%; }
+-#b7 { background: url(../images/Snow.jpg); background-size: 100% 100%; }
+-#b8 { background: url(../images/Rome.jpg); background-size: 100% 100%; }
+-#b9 { background: url(../images/Paris.jpg); background-size: 100% 100%; }
+-#b10 { background: url(../images/China.jpg); background-size: 100% 100%; }
+-
+ a.logout {
+     display: inline-block;
+     padding: 15px 25px;
+@@ -36,17 +25,6 @@ a.logout {
+     right: 20px;
+ }
+ 
+-#b1 { background: url(../images/NewYork.jpg); background-size: 100% 100%;}
+-#b2 { background: url(../images/Dubai.jpg); background-size: 100% 100%;}
+-#b3 { background: url(../images/Miami.jpg); background-size: 100% 100%;}
+-#b4 { background: url(../images/Alaska.jpg); background-size: 100% 100%;}
+-#b5 { background: url(../images/Switzerland.jpg); background-size: 100% 100%;}
+-#b6 { background: url(../images/England.jpg); background-size: 100% 100%; }
+-#b7 { background: url(../images/London.jpg); background-size: 100% 100%; }
+-#b8 { background: url(../images/Dublin.jpg); background-size: 100% 100%; }
+-#b9 { background: url(../images/Norway.jpg); background-size: 100% 100%; }
+-#b10 { background: url(../images/Istanbul.jpg); background-size: 100% 100%; }
+-
+ ul {
+     list-style-type: none;
+     margin: 0;
+diff --git a/public/stylesheets/statistics.css b/public/stylesheets/statistics.css
+index 56361ac..2fdbe76 100644
+--- a/public/stylesheets/statistics.css
++++ b/public/stylesheets/statistics.css
+@@ -8,17 +8,6 @@ html {
+     height: 100%
+ }
+ 
+-#b1 { background: url(../images/Switzerland.jpg); background-size: 100% 100%;}
+-#b2 { background: url(../images/California.jpg); background-size: 100% 100%;}
+-#b3 { background: url(../images/NewYork.jpg); background-size: 100% 100%;}
+-#b4 { background: url(../images/England.jpg); background-size: 100% 100%; }
+-#b5 { background: url(../images/Dublin.jpg); background-size: 100% 100%; }
+-#b6 { background: url(../images/Niagara.jpg); background-size: 100% 100%; }
+-#b7 { background: url(../images/Snow.jpg); background-size: 100% 100%; }
+-#b8 { background: url(../images/Rome.jpg); background-size: 100% 100%; }
+-#b9 { background: url(../images/Paris.jpg); background-size: 100% 100%; }
+-#b10 { background: url(../images/China.jpg); background-size: 100% 100%; }
+-
+ a.logout {
+     display: inline-block;
+     padding: 15px 25px;
+diff --git a/public/stylesheets/trips.css b/public/stylesheets/trips.css
+index 4e2db6a..690f2d0 100644
+--- a/public/stylesheets/trips.css
++++ b/public/stylesheets/trips.css
+@@ -8,17 +8,6 @@ html {
+     height: 100%
+ }
+ 
+-#b1 { background: url(../images/Switzerland.jpg); background-size: 100% 100%;}
+-#b2 { background: url(../images/California.jpg); background-size: 100% 100%;}
+-#b3 { background: url(../images/NewYork.jpg); background-size: 100% 100%;}
+-#b4 { background: url(../images/England.jpg); background-size: 100% 100%; }
+-#b5 { background: url(../images/Dublin.jpg); background-size: 100% 100%; }
+-#b6 { background: url(../images/Niagara.jpg); background-size: 100% 100%; }
+-#b7 { background: url(../images/Snow.jpg); background-size: 100% 100%; }
+-#b8 { background: url(../images/Rome.jpg); background-size: 100% 100%; }
+-#b9 { background: url(../images/Paris.jpg); background-size: 100% 100%; }
+-#b10 { background: url(../images/China.jpg); background-size: 100% 100%; }
+-
+ .trips {
+     margin: auto;
+     width: 50%;
+diff --git a/views/crawlers/crawlers.ejs b/views/crawlers/crawlers.ejs
+index 4b09239..3237b89 100644
+--- a/views/crawlers/crawlers.ejs
++++ b/views/crawlers/crawlers.ejs
+@@ -2,10 +2,11 @@
+ <html>
+     <head>
+         <link rel="stylesheet" href="../public/stylesheets/crawlers.css">
++        <link rel="stylesheet" href="/public/stylesheets/bg_animation.css">                
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     </head>
+-    <body>
+-            <nav class="navigation">
++    <body class="bgInitial">
++        <nav class="navigation">
+                     <ul>
+                     <li><a href="/statistics" class="statistics"><b>Statistics</b></a><br></li>
+                     <li><a href="/feedback" class="feedback"><b>Feedback</b></a><br></li>                    
+@@ -26,5 +27,13 @@
+         </form>
+ 
+         <script src="/public/react/testCode.js"></script>
++        <script>
++			var i = 0;
++			setInterval(function() {
++			  i++;
++			  i = i%9;
++			  document.body.className = "bg" + (i + 1);
++			}, 20000);
++		</script>
+     </body>
+ </html>
+diff --git a/views/feedback/comments.ejs b/views/feedback/comments.ejs
+index bc2f3fa..1d684f7 100644
+--- a/views/feedback/comments.ejs
++++ b/views/feedback/comments.ejs
+@@ -2,9 +2,10 @@
+ <html>
+     <head>
+         <link rel="stylesheet" href="../public/stylesheets/comments.css">
++        <link rel="stylesheet" href="/public/stylesheets/bg_animation.css">                
+     </head>
+-    <body>
+-            <nav>
++    <body class="bgInitial">
++        <nav>
+                     <ul>
+                         <li><a href="/" class="home"><b>Home</b></a><br></li>
+                     </ul>
+@@ -18,5 +19,13 @@
+             <form id="comments" action="/feedback" method="post">
+                 <input type="submit" id="submit" value="Submit" />
+             </form>
++            <script>
++                var i = 0;
++                setInterval(function() {
++                i++;
++                i = i%9;
++                document.body.className = "bg" + (i + 1);
++                }, 20000);
++		    </script>
+     </body>
+ </html>
+\ No newline at end of file
+diff --git a/views/feedback/feedback.ejs b/views/feedback/feedback.ejs
+index efc754a..c114035 100644
+--- a/views/feedback/feedback.ejs
++++ b/views/feedback/feedback.ejs
+@@ -2,9 +2,10 @@
+ <html>
+     <head>
+         <link rel="stylesheet" href="../public/stylesheets/feedback.css">
++        <link rel="stylesheet" href="/public/stylesheets/bg_animation.css">        
+     </head>
+-    <body>
+-            <nav class="navigation">
++    <body class="bgInitial">
++        <nav class="navigation">
+                     <ul>
+                     <li><a href="/crawlers" class="crawlers"><b>Crawlers</b></a><br></li>
+                     <li><a href="/statistics" class="statistics"><b>Statistics</b></a><br></li>
+@@ -23,5 +24,13 @@
+                     </tr>
+                 <% } %>      
+         </table>
++        <script>
++			var i = 0;
++			setInterval(function() {
++			  i++;
++			  i = i%9;
++			  document.body.className = "bg" + (i + 1);
++			}, 20000);
++		</script>
+     </body>
+ </html>
+\ No newline at end of file
+diff --git a/views/statistics/statistics.ejs b/views/statistics/statistics.ejs
+index 5753329..22fcf41 100644
+--- a/views/statistics/statistics.ejs
++++ b/views/statistics/statistics.ejs
+@@ -2,9 +2,10 @@
+ <html>
+     <head>
+         <link rel="stylesheet" href="../public/stylesheets/statistics.css">
++        <link rel="stylesheet" href="/public/stylesheets/bg_animation.css">                
+     </head>
+-    <body>
+-            <nav class="navigation">
++    <body class="bgInitial">
++        <nav class="navigation">
+                     <ul>
+                     <li><a href="/crawlers" class="crawlers"><b>Crawlers</b></a><br></li>
+                     <li><a href="/feedback" class="feedback"><b>Feedback</b></a><br></li>
+@@ -30,5 +31,13 @@
+                     </tr>
+                 <% } %> 
+         </table>
++        <script>
++			var i = 0;
++			setInterval(function() {
++			  i++;
++			  i = i%9;
++			  document.body.className = "bg" + (i + 1);
++			}, 20000);
++		</script>
+     </body>
+ </html>
+\ No newline at end of file
+diff --git a/views/trips/recommendations.ejs b/views/trips/recommendations.ejs
+index c0fe9a4..a410384 100644
+--- a/views/trips/recommendations.ejs
++++ b/views/trips/recommendations.ejs
+@@ -11,9 +11,10 @@
+   gtag('config', 'UA-112810080-1');
+ </script>
+         <link rel="stylesheet" href="/public/stylesheets/trips.css">
++        <link rel="stylesheet" href="/public/stylesheets/bg_animation.css">
+         <script src="/public/js/jquery.js"></script>
+     </head>
+-    <body>
++    <body class="bgInitial">
+         <nav class="navigation">
+           <ul>
+             <li><a href="/" class="home"><b>Home</b></a><br></li>
+@@ -46,20 +47,13 @@
+         <% } %>
+         </div>
+         <script>
+-            function run(interval, frames) {
+-            var int = 1;
+-
+-            function func() {
+-                document.body.id = "b"+int;
+-                int++;
+-                if(int === frames) { int = 1; }
+-            }
+-
+-            var swap = window.setInterval(func, interval);
+-            }
+-
+-            run(10000, 10); //milliseconds, frames
+-         </script>
++			var i = 0;
++			setInterval(function() {
++			  i++;
++			  i = i%9;
++			  document.body.className = "bg" + (i + 1);
++			}, 20000);
++		</script>
+ 
+          <br>
+ 

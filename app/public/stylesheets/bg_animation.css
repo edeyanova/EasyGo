@@ -1,0 +1,110 @@
+body {
+    background-size: 100% 100%;
+}
+
+html {
+    height: 100%
+}
+
+@keyframes anim1 {
+    from {background: url("/public/images/California.jpg");}
+    to {background: url("/public/images/Dublin.jpg");}
+}
+
+@keyframes anim2 {
+    from {background: url("/public/images/Dublin.jpg");}
+    to {background: url("/public/images/England.jpg");}
+}
+
+@keyframes anim3 {
+    from {background: url("/public/images/England.jpg");}
+    to {background: url("/public/images/NewYork.jpg");}
+}
+
+@keyframes anim4 {
+    from {background: url("/public/images/NewYork.jpg");}
+    to {background: url("/public/images/Niagara.jpg");}
+}
+
+@keyframes anim5 {
+    from {background: url("/public/images/Niagara.jpg");}
+    to {background: url("/public/images/Paris.jpg");}
+}
+
+@keyframes anim6 {
+    from {background: url("/public/images/Paris.jpg");}
+    to {background: url("/public/images/Rome.jpg");}
+}
+
+@keyframes anim7 {
+    from {background: url("/public/images/Rome.jpg");}
+    to {background: url("/public/images/Snow.jpg");}
+}
+
+@keyframes anim8 {
+    from {background: url("/public/images/Snow.jpg");}
+    to {background: url("/public/images/Switzerland.jpg");}
+}
+
+@keyframes anim9 {
+    from {background: url("/public/images/Switzerland.jpg");}
+    to {background: url("/public/images/California.jpg");}
+}
+
+.bgInitial {
+    background:  url("/public/images/California.jpg");
+}
+
+.bg1 {
+	background: url("/public/images/California.jpg");
+	animation-name: anim9;
+    animation-duration: 2s;
+}
+
+.bg2 {
+	background: url("/public/images/Dublin.jpg");
+	animation-name: anim1;
+    animation-duration: 2s;
+}
+
+.bg3 {
+	background: url("/public/images/England.jpg");
+	animation-name: anim2;
+    animation-duration: 2s;
+}
+
+.bg4 {
+	background: url("/public/images/NewYork.jpg");
+	animation-name: anim3;
+    animation-duration: 2s;
+}
+
+.bg5 {
+	background: url("/public/images/Niagara.jpg");
+	animation-name: anim4;
+    animation-duration: 2s;
+}
+
+.bg6 {
+	background: url("/public/images/Paris.jpg");
+	animation-name: anim5;
+    animation-duration: 2s;
+}
+
+.bg7 {
+	background: url("/public/images/Rome.jpg");
+	animation-name: anim6;
+    animation-duration: 2s;
+}
+
+.bg8 {
+	background: url("/public/images/Snow.jpg");
+	animation-name: anim7;
+    animation-duration: 2s;
+}
+
+.bg9 {
+	background: url("/public/images/Switzerland.jpg");
+	animation-name: anim8;
+    animation-duration: 2s;
+}

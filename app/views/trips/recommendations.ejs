@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112810080-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-112810080-1');
+</script>
+        <link rel="stylesheet" href="/public/stylesheets/trips.css">
+        <link rel="stylesheet" href="/public/stylesheets/bg_animation.css">
+        <link rel="stylesheet" href="/public/stylesheets/dropdown.css">
+        <script src="/public/js/jquery.js"></script>
+    </head>
+    <body class="bgInitial">
+        <nav class="navigation">
+          <ul>
+            <li><a href="/" class="home"><b>Home</b></a><br></li>
+            <li><br>
+            </li>   
+            <% if (!info) { %>
+                <li><a href="/users" class="register"><b>Register</b></a><br></li>
+            <% } %>  
+            <% if (!info) { %>
+                <li><a href="/logins" class="login"><b>Login</b></a><br></li>                
+            <% } %>  
+            <% if (info) { %>
+                <li><a href="/feedback" class="feedback"><b>Feedback</b></a><br></li
+            <% } %>             
+          </ul>
+        </nav>
+
+        <span class="logout">
+          <div class="dropdown logout">
+            <button onclick="myFunction()" class="dropbtn">Converter</button>
+            <div id="myDropdown" class="dropdown-content">
+              <div id="xecurrencywidget"></div>
+<script>var xeCurrencyWidget = {"domain":"fierce-sierra-32935.herokuapp.com","language":"en","size":"compact"};</script>
+<script src="https://www.xe.com/syndication/currencyconverterwidget.js"></script>
+            </div>
+          </div>
+          <% if (info) { %>
+            <div class="dropdown logout">
+              <a href="/logout" class="dropbtn" style="text-decoration: none">Logout</a>
+            </div>
+          <% } %>  
+        </span>
+
+        <br>
+        <div class="infoLogged">
+        <% if (info) { %>
+            <script>
+                var loggedIn = true;
+            </script>
+        <% } %>
+        <% if (!info) { %>
+            <script>
+                var loggedIn = false;
+            </script>
+        <% } %>
+        </div>
+        <script>
+			var i = 0;
+			setInterval(function() {
+			  i++;
+			  i = i%9;
+			  document.body.className = "bg" + (i + 1);
+			}, 20000);
+		</script>
+         <br>
+
+        <script>
+          var trips = <%- trips %>;
+          var manuallyUpdateTripsPanel;
+        </script>
+        <div id="app" class="recommendations"></div>
+        <div id="myTripsPanel"></div>
+        <script src="/public/react/tripComponent.js"></script>
+        <script src="/public/react/myTrips.js"></script>
+
+        <script>
+          /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+        </script>
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bg3"></div>
+
+    <div class="bg4"></div>
+    <div class="bg5"></div>
+    <div class="bg6"></div>
+
+    <div class="bg7"></div>
+    <div class="bg8"></div>
+    <div class="bg9"></div>
+    </body>
+</html>

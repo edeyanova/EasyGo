@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112810080-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-112810080-1');
+</script>
+        <link rel="stylesheet" href="/public/stylesheets/login.css">
+    </head>
+    <body>
+        <%= info %>
+        <section class="container">
+                <div class="login">
+                  <h1>Register to EasyGo</h1>
+                  <form method="post" action="/users">
+                    <p><input type="text" name="username" value="" placeholder="Username or Email"></p>
+                    <p><input type="text" name="first_name" value="" placeholder="First name"></p>
+                    <p><input type="text" name="surname" value="" placeholder="Last name"></p>
+                    <p><input type="password" name="password" value="" placeholder="Password"></p>
+                    <p><input type="password" name="password_repeat" value="" placeholder="Repeat Password"></p>                    
+                    <p class="submit"><input type="submit" name="commit" value="Register"></p>
+                  </form>
+                </div>
+                <div class="login-help">
+                    <p>You already have an account?  <a href="/logins">Login</a><br></p>
+                    <p>Pick a trip here:  <a href="/">Questions</a></p>
+                </div>
+            
+              </section>
+    </body>
+</html>

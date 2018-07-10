@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <ul>
+      <% for (var i = 0; i < scripts.length; i++) { %>
+        <li>
+          <a href="/crawlers/edit/<%= scripts[i]._id %>"><%= scripts[i]._id %></a>
+        </li>
+      <% } %>
+    </ul>
+  </body>
+<html>
